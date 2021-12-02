@@ -1,0 +1,23 @@
+.columns{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col{
+    flex-direction: row;
+    width: 34%;
+    text-align: center;
+}
+.todoCol{
+    background-color: black;
+    color: white;
+}
+.progressCol{
+    background-color: deeppink;
+}
+.doneCol{
+    background-color: greenyellow;
+}
