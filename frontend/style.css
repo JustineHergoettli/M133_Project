@@ -1,7 +1,7 @@
 .columns{
     display: flex;
     width: 100%;
-    height: 100vh;
+
     margin: 0px;
     padding: 0px;
 }
@@ -20,4 +20,7 @@
 }
 .doneCol{
     background-color: greenyellow;
+}
+.designCard{
+    background-color: blue;
 }

@@ -6,12 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Todo</title>
+    <script src="app.js" type="module"></script>
+    <script type="module" defer>
+        import {init} from "./lib/templating.js";
+        init();
+    </script>
 </head>
 <body>
+
+
     <div class="columns">
         <div class="col todoCol"><h1>todo</h1></div>
         <div class="col progressCol"><h1>in progress</h1></div>
         <div class="col doneCol"><h1>done</h1></div>
     </div>
+
+
+    <ul class="designCard">
+        <template data-template-foreach="loadCards" data-template-let="card">
+            <li>
+                <h3>{{ card.beschreibung }}</h3>
+                <button>add</button>
+                <script type="module">
+                    import {append} from "./lib/templating.js"
+                    document.querySelector("button")
+                    .addEventListener("click", () => {append(document.querySelector("#from"), {card}); 
+                    console.log(card);})
+                </script>
+            </li>
+        </template>
+    </ul>
+    <teamplate id="form"></teamplate>
+
 </body>
 </html>
