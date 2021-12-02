@@ -1,6 +1,6 @@
 'use strict'
 
-document.loadCards = async () => {
-    const response = await fetch("/api/cards");
+document.loadList = async () => {
+    const response = await fetch("/api/list");
     return await response.json();
 }
