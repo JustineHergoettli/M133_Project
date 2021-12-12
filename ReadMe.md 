@@ -1,0 +1,7 @@
+Öffnen Sie die Konsole vom Visual Studio Code und geben Sie folgendes ein:
+
+deno run --allow-all app.js
+
+Danach öffnen Sie den Browser und geben folgende URL ein:
+
+http://localhost:8000/
